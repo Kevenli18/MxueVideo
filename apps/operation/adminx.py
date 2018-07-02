@@ -24,9 +24,9 @@ class UserMessageAdmin(object):
 
 
 class CourseCommentAdmin(object):
-    list_display = ['user', 'course', 'coments', 'add_time']
-    search_fields = ['user', 'course', 'coments']
-    list_filter = ['user', 'course', 'coments' 'add_time']
+    list_display = ['user', 'course', 'comments', 'add_time']
+    search_fields = ['user', 'course', 'comments']
+    list_filter = ['user', 'course', 'comments' 'add_time']
 
 
 class UserFavoriteAdmin(object):

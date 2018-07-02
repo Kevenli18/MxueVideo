@@ -24,6 +24,9 @@ urlpatterns = [
     #课程机构配置
     url(r'^org/', include('organization.urls', namespace='org')),
 
+    #课程相关配置
+    url(r'^course/', include('courses.urls', namespace='course')),
+
     #处理图片显示的url，使用Django自带server，传入参数告诉它去哪个路劲找
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
 
